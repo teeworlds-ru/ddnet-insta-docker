@@ -33,7 +33,7 @@ RUN set -x && \
 
 RUN set -x && \
     cmake -B build -GNinja DPREFER_BUNDLED_LIBS=ON -DCLIENT=OFF && \
-    cmake --build build --config MinSizeRel --target game-server && \
+    cmake --build build --config RelWithDebinfo --target game-server && \
     mv build/DDNet-Server /usr/bin/teeworlds && \
     cd / && rm -rf sources 
 
