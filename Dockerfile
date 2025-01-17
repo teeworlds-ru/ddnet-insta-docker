@@ -1,5 +1,6 @@
 FROM alpine:latest as build
 
+
 ARG GIT_COMMIT=refs/heads/prod
 
 RUN set -x && \
